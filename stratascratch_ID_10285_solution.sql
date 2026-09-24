@@ -9,7 +9,7 @@ SELECT
   COUNT(CASE WHEN a.action = 'accepted' THEN 1 END)::DECIMAL / 
     NULLIF(COUNT(*), 0) AS acceptance_rate
 FROM requests_sent s
--- with LEFT JOIN will get NULLs for no corresponding accepts
+-- with LEFT JOIN we get NULLs for no corresponding accepts
 LEFT JOIN requests_accepted a
   ON s.user_id_sender = a.user_id_sender AND 
   s.user_id_receiver = a.user_id_receiver
