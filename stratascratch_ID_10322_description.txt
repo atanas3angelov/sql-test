@@ -1,0 +1,14 @@
+Finding User Purchases  
+  
+Identify returning active users by finding users who made a second purchase within 1 to 7 days after their first purchase.  
+  
+Ignore same-day purchases.  
+  
+Output a list of these user_id.  
+  
+Table amazon_transactions:
+created_at:date  
+id:bigint  
+item:text  
+revenue:bigint  
+user_id:bigint  
