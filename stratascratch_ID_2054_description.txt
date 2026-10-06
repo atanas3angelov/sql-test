@@ -1,0 +1,8 @@
+Consecutive Days  
+  
+Find all the users who were active for 3 consecutive days or more.  
+  
+Table sf_events:
+account_id:character varying  
+record_date:date  
+user_id:character varying  
